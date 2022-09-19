@@ -16,13 +16,7 @@ describe('TokenMatrix', () => {
 
     it('should return the undefined if out of column', () => {
       const matrix = parser.parse('const a = 5;\n\nlet b = 6;\nb;\n');
-      expect(matrix.getColumn(1).map((t) => t?.value)).toStrictEqual([
-        'a',
-        undefined,
-        'b',
-        undefined,
-        undefined,
-      ]);
+      expect(matrix.getColumn(1).map((t) => t?.value)).toStrictEqual(['a', undefined, 'b', undefined, undefined]);
     });
   });
 

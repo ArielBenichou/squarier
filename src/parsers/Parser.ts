@@ -2,7 +2,6 @@ import { Token } from '../core/Token';
 import { TokenMatrix } from '../core/TokenMatrix';
 
 export class Parser {
-
   parse(str: string) {
     const rows = str.split('\n');
     const leftSpacesCount = this.countSpacesBeforeFirstWord(rows[0]);
