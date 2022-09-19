@@ -1,6 +1,6 @@
 {
   "name": "squarier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,11 +10,11 @@
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json",
     "test:watch": "jest --watch --config jestconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,13 @@
   "files": [
     "lib/**/*"
   ],
-  "keywords": ["Square", "Code", "Format", "Prettier", "Columns"],
+  "keywords": [
+    "Square",
+    "Code",
+    "Format",
+    "Prettier",
+    "Columns"
+  ],
   "author": "Ariel Benichou",
   "license": "ISC",
   "bugs": {
