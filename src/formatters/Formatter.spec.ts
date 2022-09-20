@@ -104,4 +104,16 @@ second line 		=> 		   	  2nd endofline,`;
 second line => 2nd   endofline,`;
     expect(formatted).toBe(expected);
   });
+
+  it("should remove spaces at the end of lines", () => {
+
+    const selection = `const a = 5;
+let b = 567;   `;
+
+    const formatted = formatter.format(selection);
+
+    const expected = `const a = 5;
+let   b = 567;`;
+    expect(formatted).toBe(expected);
+  })
 });
