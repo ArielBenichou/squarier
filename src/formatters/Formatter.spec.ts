@@ -102,6 +102,6 @@ second line 		=> 		   	  2nd endofline,`;
 
     const expected = `first  line => other end,
 second line => 2nd   endofline,`;
-    expect(formatted).toBe(expected)
-  })
+    expect(formatted).toBe(expected);
+  });
 });

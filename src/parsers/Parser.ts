@@ -19,8 +19,8 @@ export class Parser {
     );
   }
 
-  private convertTabsToOneSpace(str: string):string {
-    return str.replace(/\t/g, " ");
+  private convertTabsToOneSpace(str: string): string {
+    return str.replace(/\t/g, ' ');
   }
 
   /**
