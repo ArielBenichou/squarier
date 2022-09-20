@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.1.2] - 2022-09-20
+### Added
+- Handling of tabs - converting them to single space
+
 ## [0.1.0] - 2022-09-19
 ### Added
 - Dumb Format Selection
