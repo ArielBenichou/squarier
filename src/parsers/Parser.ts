@@ -12,18 +12,23 @@ export class Parser {
     return tokenMatrix;
   }
 
-  countSpacesBeforeFirstWord(line: string): number {
+  private countSpacesBeforeFirstWord(line: string): number {
     return Math.max(
       line.split('').findIndex((el) => el !== ' '),
       0,
     );
   }
 
+  private convertTabsToOneSpace(str: string):string {
+    return str.replace(/\t/g, " ");
+  }
+
   /**
    * Return a array of token,
    * takes into account string and string escape characters
    */
-  parseLine(line: string): Token[] {
+  private parseLine(line: string): Token[] {
+    line = this.convertTabsToOneSpace(line);
     const tokens: Token[] = [];
     let tmp = '';
     let isInString = false;

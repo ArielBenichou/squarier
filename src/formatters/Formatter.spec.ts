@@ -92,4 +92,16 @@ and  this has   one`;
             '/api/clients' => 'BK_GLOBAL_Clients',`;
     expect(formatted).toBe(expected);
   });
+
+  it('should handle tabs as a single white space', () => {
+    // in the string below we have tabs
+    const selection = `first line =>   	 other end,
+second line 		=> 		   	  2nd endofline,`;
+
+    const formatted = formatter.format(selection);
+
+    const expected = `first  line => other end,
+second line => 2nd   endofline,`;
+    expect(formatted).toBe(expected)
+  })
 });
