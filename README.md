@@ -1,4 +1,4 @@
-# Sqaurier
+# Squarier
 
 This package can help you format text in a square like manner.
 
